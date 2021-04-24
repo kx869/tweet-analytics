@@ -1,4 +1,4 @@
-function to be used in the compute_tweets function
+# function to be used in the compute_tweets function
 def calculate_score(tweet_word_list, keyword_value_list):
     keyword_count = 0
     tweet_total_score = 0
