@@ -1,5 +1,8 @@
 # Tweet Analytics Project
 
+# Input a file containing keywords with their respective sentiment values
+# Input a file containing tweets to be analyzed to develop analytics
+
 from tweet_analytics import compute_tweets
 
 # prompt for name of keyword file and tweet file
