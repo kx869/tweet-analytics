@@ -14,15 +14,6 @@ def calculate_score(tweet_word_list, keyword_value_list):
         return "no results"
         # allows for if != "no results" in compute_tweets() lines 97, 109, 119, 129
 
-# function to be used in the compute_tweets function
-def results(r_average, r_keyword_tweet_count, r_tweet_count):
-    try:
-        r_tuple = ("%.2f"%r_average, r_keyword_tweet_count, r_tweet_count)
-    except UnboundLocalError:
-        r_average = 0
-        r_tuple = (r_average, r_keyword_tweet_count, r_tweet_count)
-    return r_tuple
-
 def compute_tweets(tweet_file, keyword_file):
     keyword_list = []
     stripped_kh_pair = []
