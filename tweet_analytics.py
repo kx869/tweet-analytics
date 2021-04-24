@@ -1,3 +1,5 @@
+# Tweet Analytics Project
+
 # function to be used in the compute_tweets function
 def calculate_score(tweet_word_list, keyword_value_list):
     keyword_count = 0
@@ -56,7 +58,11 @@ def compute_tweets(tweet_file, keyword_file):
             stripped_kh_pair = []
         # closes keywords file
         keywordfile.close()
+    # generates an exception if either file does not exists, function returns an empty list
+    except IOError:
+        return []
 
+    try:
         # tweets file (code from assignment document)
         tweetfile = open(tweet_file,"r",encoding="utf-8")
 
